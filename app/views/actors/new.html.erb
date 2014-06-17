@@ -1,0 +1,5 @@
+<%= form_for @actor, url: actors_path do |f| %>
+      <%= @actor.errors.full_messages unless @actor.errors.empty? %>
+Name: <%= f.text_field :name%> </br>
+      <%= f.submit "Save" %>
+<% end %>

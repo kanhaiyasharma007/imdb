@@ -1,0 +1,14 @@
+<%= simple_nested_form_for @movie do |f| %>
+  <%= f.label :Movie %>
+
+<h1>SONGS</h1>
+<%= f.simple_fields_for :ratings do |rate| %>
+  <%= rate.label :rate %>
+  <%= rate.input :ratable_id, collection: @movie.songs.all %>
+  <%= rate.input :stars, collection: 1..5 %>
+  <%= rate.link_to_remove "Delete" %>
+<% end %>
+  <%= f.link_to_add "Rate new song",:ratings %>
+  
+  <br><%= f.button :submit %></br>
+<% end %>

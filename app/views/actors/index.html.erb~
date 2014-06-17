@@ -1,0 +1,13 @@
+  Welcome to my world
+
+
+ # <%@actors.all.each do |actor| %>
+ # <%= link_to actor.name, actor_path(actor)%>
+ # <%end%>
+
+    <% @actors.each do |actor| %>
+    <%= link_to actor.name, actor%> ... <%= link_to "Edit", edit_actor_path(actor) %>
+    <% end %> 
+
+<%= link_to "Create A New Actor", new_actor_path %>
+<%= link_to "Update An Actor", new_actor_path %> 

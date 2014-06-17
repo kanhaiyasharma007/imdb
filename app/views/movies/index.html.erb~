@@ -1,0 +1,15 @@
+<% Movie.all.each do |a| %>
+<p><%= p a.name %></p>
+<%end%>
+
+  Welcome to my world
+
+    <% @movies.all.each do |movie| %>
+   <p> <%= link_to movie.name, movie%>.....<%=link_to "Edit", edit_movie_path(movie) %>....<%= link_to "Delete", movie_path(movie), method: :delete%> </p> 
+    <% end %> 
+
+<% #link_to "Create A New Movie", new_actor_path %>
+<%= link_to "Add A Movie", new_actor_path %> 
+<% #link_to "Edit An Actor", edit_actor_path %>
+<% #link_to "Destroy An Actor", edit_actor_path %>
+

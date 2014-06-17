@@ -1,0 +1,30 @@
+<html>
+<body bgcolor="#E6E6FA">
+<h1><center><b>IMDB</b></center></h1>
+  <style>
+  table, th, td
+  {
+  border:lpx solid black;
+  }
+  </style>
+  <table>
+  <caption>LIST OF MOVIES</caption>
+  <tr>
+    <th>Movie</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr> 
+  <% @movies.all.each do |movie| %>
+  <td><%= link_to movie.name, movie%></td> <td><%=link_to "Edit", edit_movie_path(movie) %></td> <td><%= link_to "Delete", movie_path(movie), method: :delete%> </td>
+  </tr> 
+    <% end %> 
+  </table>
+  <% #link_to "Create A New Movie", new_actor_path %>
+  <%= link_to "Add Movie", new_movie_path %> 
+  <% #link_to "Edit An Actor", edit_actor_path %>
+  <% #link_to "Destroy An Actor", edit_actor_path %>
+  <%= link_to "Add Actor", actors_path %>
+  <%= link_to "User", users_path %>
+</body>
+</html>

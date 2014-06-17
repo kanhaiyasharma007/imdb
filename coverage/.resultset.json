@@ -1,0 +1,94 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/kanhaiya/imdb/app/helpers/actors_helper.rb": [
+        1,
+        null
+      ],
+      "/home/kanhaiya/imdb/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/kanhaiya/imdb/app/controllers/actors_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        2,
+        2,
+        2,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        4,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/kanhaiya/imdb/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/kanhaiya/imdb/app/models/actor.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/kanhaiya/imdb/app/models/movie_actor.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/kanhaiya/imdb/app/models/movie.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1402647092
+  }
+}
